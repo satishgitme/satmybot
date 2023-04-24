@@ -59,7 +59,7 @@ export default function Home() {
         {/* Navbar */}
         <nav className="bg-white shadow w-full">
           <div className="px-4 h-14 flex justify-between items-center">
-            <div className="text-xl font-bold">Jobot</div>
+            <div className="text-xl font-bold">Satishbot</div>
             <div>
               <input
                 type="password"

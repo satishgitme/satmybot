@@ -14,5 +14,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typhography")],
+  plugins: [require("@tailwindcss/typography")],
 }

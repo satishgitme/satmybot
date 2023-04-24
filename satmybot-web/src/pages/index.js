@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import  ReactMarkdown  from "react-markdown";
 
 export default function Home() {
   const [apiKey, setApiKey] = useState("");
@@ -78,11 +78,11 @@ export default function Home() {
             {messages
               .filter((msg) => msg.role !== "system")
               .map((msg, idx) => (
-                <div key={idx} className="my-4">
+                <div key={idx} className="my-3">
                   <div className="font-bold">
                     {msg.role === "user" ? "You" : "Satishbot"}
                   </div>
-                  <div className="text-lgprose">
+                  <div className="text-lg prose">
                     <ReactMarkdown>{msg.content}</ReactMarkdown>
                   </div>
                 </div>
